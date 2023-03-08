@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('appointments', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('email');
+            $table->string('mobile');
+            $table->string('service');
+            $table->date('date');
+            $table->timestampTz('added_at', $precision = 0);
+            $table->string('message');
             $table->timestamps();
         });
     }

@@ -9,8 +9,9 @@ use App\Http\Controllers\MemberController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
-
+use App\Models\Contact;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -40,13 +41,14 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
-    Route::resource('about', AboutController::class);
-    Route::resource('testimonial', TestimonialController::class);
-    Route::resource('contact', ContactController::class);
-    Route::resource('service', ServiceController::class);
-    Route::resource('post', PostController::class);
-    Route::resource('member', MemberController::class);
-    Route::resource('appointment', AppointmentController::class);
+    Route::resource('resource/about', AboutController::class);
+    Route::resource('resource/testimonial', TestimonialController::class);
+    Route::resource('resource/project', ProjectController::class);
+    Route::resource('resource/contact', ContactController::class);
+    Route::resource('resource/service', ServiceController::class);
+    Route::resource('resource/post', PostController::class);
+    Route::resource('resource/member', MemberController::class);
+    Route::resource('resource/appointment', AppointmentController::class);
 
 });
 

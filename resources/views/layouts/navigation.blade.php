@@ -1,3 +1,11 @@
+<?php
+use App\Models\Contact;
+use App\Models\About;
+
+$contact = Contact::findOrFail(3);
+$about = About::findOrFail(1);
+
+?>
 <nav x-data="{ open: false }" class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -36,6 +44,32 @@
                     <x-slot name="content">
                         <x-dropdown-link :href="route('profile.edit')">
                             {{ __('Profile') }}
+                        </x-dropdown-link>
+
+                        <x-dropdown-link :href="route('post.create')">
+                            {{ __('Post') }}
+                        </x-dropdown-link>
+
+                        <x-dropdown-link :href="route('contact.edit', $contact->id)">
+                            {{ __('Contact') }}
+                        </x-dropdown-link>
+                        <x-dropdown-link :href="route('about.edit', $about->id)">
+                            {{ __('About') }}
+                        </x-dropdown-link>
+                        <x-dropdown-link :href="route('testimonial.create')">
+                            {{ __('Testimonial') }}
+                        </x-dropdown-link>
+                        <x-dropdown-link :href="route('member.create')">
+                            {{ __('Member') }}
+                        </x-dropdown-link>
+                        <x-dropdown-link :href="route('project.create')">
+                            {{ __('Project') }}
+                        </x-dropdown-link>
+                        <x-dropdown-link :href="route('appointment.create')">
+                            {{ __('Appointment') }}
+                        </x-dropdown-link>
+                        <x-dropdown-link :href="route('service.create')">
+                            {{ __('Service') }}
                         </x-dropdown-link>
 
                         <!-- Authentication -->

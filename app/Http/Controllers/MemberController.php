@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\Member\MemberStoreRequest;
+use App\Http\Requests\Member\MemberUpdateRequest;
+use App\Models\Member;
 
 class MemberController extends Controller
 {
@@ -19,15 +22,25 @@ class MemberController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(MemberStoreRequest $request)
     {
-        //
+        //validation
+        $validated = $request->validated();
+        // $validated['created_by'] = $request->user()->id;
+        // insert data
+        $insert    = Member::create($validated);
+
+        if($insert){
+            session()->flash('status', 'member-created');
+            return redirect()->route('member.index');
+        }
+        return abort(500);
     }
 
     /**
@@ -43,15 +56,28 @@ class MemberController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        //edit member
+        return view('member.edit', ['user' => $request->user(), 'member'=>$member]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(MemberUpdateRequest $request, string $id)
     {
-        //
+        //update member details
+        $member = Member::findOrFail($id);
+        $validated = $request->validated();
+        // $validated['created_by'] = $request->user()->id;
+
+        $update = $member->update($validated);
+
+        if($update) {
+            session()->flash('status', 'Member updated successfully!');
+            return redirect()->route('member.edit', $id);
+        }
+
+        return abort(500);
     }
 
     /**

@@ -11,9 +11,9 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h1 class="display-1 text-white animated slideInDown">Best Architecture And Interior Design Services</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                                <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Read More</a>
+                                <h1 class="display-1 text-white animated slideInDown">Best Modern Clean Architecture</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Surrounding suppose to be inspiring, simple, balanced and organised. Come to us, we can talk, agree and make a better business.</p>
+                                <a href="{{ route('site.contact') }}" class="btn btn-primary py-3 px-5 animated slideInLeft">Reach Us</a>
                             </div>
                         </div>
                     </div>
@@ -25,9 +25,9 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h1 class="display-1 text-white animated slideInDown">Best Architecture And Interior Design Services</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                                <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Read More</a>
+                                <h1 class="display-1 text-white animated slideInDown">Best Interior Design Services</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Comforting, Sound Lighting, Ease with Warmly Space. It's not ending only in mega structures, functional or stability we propel to emotional awareness and mind cooling state.</p>
+                                <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Contact Us</a>
                             </div>
                         </div>
                     </div>
@@ -39,9 +39,9 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
-                                <h1 class="display-1 text-white animated slideInDown">Best Architecture And Interior Design Services</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                                <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Read More</a>
+                                <h1 class="display-1 text-white animated slideInDown">Best Minimalistic Design Approach</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Minimal, Clarity, Spaces and Order always add value to a design. Be amongst the smartest clients, dare you will never go back!</p>
+                                <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Come To Us</a>
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                             <img src="img/icons/icon-2.png" alt="Icon">
                         </div>
                         <h3 class="mb-3">Design Approach</h3>
-                        <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                        <p class="mb-0">Minimalistic and Simplicity is what we value in our design Approach. We believe less is more. We can achieve more by doing less!</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -71,7 +71,7 @@
                             <img src="img/icons/icon-3.png" alt="Icon">
                         </div>
                         <h3 class="mb-3">Innovative Solutions</h3>
-                        <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                        <p class="mb-0">Daring spirit, and disturbing the status quo is what brings new ideas into life. We don't afraid to dare, go extra for the sake of uniqueness and legacy!</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -80,7 +80,7 @@
                             <img src="img/icons/icon-4.png" alt="Icon">
                         </div>
                         <h3 class="mb-3">Project Management</h3>
-                        <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                        <p class="mb-0">Being trustworthy includes meeting deadline in a tight budget without leaving the quality of work behind. We are a keenly and devil in detail minded team to make sure that everything fit into place to stay iconic!</p>
                     </div>
                 </div>
             </div>

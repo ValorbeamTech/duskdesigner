@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('members', function (Blueprint $table) {
             $table->id();
+            $table->string('img');
+            $table->string('name');
+            $table->string('profession');
+            $table->string('facebook_link');
+            $table->string('twitter_link');
+            $table->string('instagram_link');
             $table->timestamps();
         });
     }
